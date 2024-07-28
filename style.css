@@ -1,0 +1,620 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Plain Light";
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+/* #crsr{
+    height: 3vw;
+    width:3vw;
+    background-color: #03b34a;
+    border: 1px solid #fff;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+} */
+
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color: #0B0B0B;
+    z-index: 999;
+    position: fixed; padding: 12vh 13vh;
+    /* align-items: center; */
+
+}
+.line{
+    height: fit-content;
+    /* background-color: aqua; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+#loader .line h1{
+ font-size: 6.5vw;
+ /* padding: 10vh 9vh; */
+ text-transform: uppercase;
+ /* align-items: center; */
+}
+#main{
+    position: relative;
+    background-color: #000000;
+}
+#page1{
+   bottom: 100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    /* background-color: red; */
+}
+.line-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.line-part1 h5 , .line-part1 h6{
+    font-family: "silk serif";
+    font-size: 3vw;
+    font-weight: 100;
+    padding-bottom: 1vw;
+}
+.line-part1 h5{
+    width: 5vw;
+    text-align: right;
+}
+.line h2{
+font-size: 5vw;
+ opacity: 0;
+ text-transform: uppercase;
+ animation-name: anime;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+}
+@keyframes anime{
+    0%{
+        font-family: "plain Light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+    33%{
+        font-family: "plain Light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+    66%{
+        font-family: "serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+    }
+    100%{
+        font-family: "plain Light";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 0;
+    }
+}
+#nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5vw 4.7vw;
+}
+#nav1-part1{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between;
+     */
+
+     /* background-color: red; */
+     justify-content: space-between;
+     gap: 3.2vw;
+}
+.center:nth-child(2){
+    margin-top: 6.7vw;
+}
+
+#nav1-part1 h4{
+    font-style: 0.4vw;
+    font-weight: 400;
+    cursor: pointer;
+}
+.center{
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    width: 72vw;
+    margin-left: 27vw;
+    position: relative;
+}
+#center1 h1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-family: "silk serif";
+    top: 19%;
+    left: -18%;
+}
+
+.center h1{
+    font-size: 6.9vw;
+    line-height: 7.2vw;
+    font-weight: 600;
+    letter-spacing:0.3vw;
+
+}
+/* .center h1:nth-child(4){
+    margin-top: 6vw;
+} */
+#centerid{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+#centerid h2 ,#centerid h3{
+    font-size: 6.9vw;
+    line-height: 7.2vw;
+    font-weight: 600;
+    overflow: hidden;
+    z-index: 999; 
+    border-bottom: 0.4vw solid white;
+   padding-bottom: 0.8vw;
+
+    
+}
+
+#center1{
+    overflow: hidden;
+    
+   
+
+}
+#center1 h1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-family: "silk serif";
+    right:  100%;
+
+}
+#center2{
+    overflow: hidden;
+}
+#center3 {
+    height: fit-content;
+    overflow: hidden;
+    /* background-color: aliceblue; */
+}
+#centerid h2:hover{
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-weight: 500;
+    border-bottom: 0.4vw solid white;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #151515;
+    /* overflow: hidden; */
+    padding: 10vw 0;
+    
+}
+#video_container{
+
+    /* margin-top: 20vh; */
+    height: 70vh;
+    width: 75vw;
+    position: relative;
+    left: 23%;
+    /* background-color: red; */
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+}
+#video_container img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top:0;
+}
+#video_container video{
+    height: 100%;
+    /* position: absolute; */
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+#video_cursur{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    background-color: #FFA63D;
+    position: absolute;
+    z-index: 999;
+    top: 6%;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#video_cursur i{
+    /* position: absolute;
+    top: 33%;
+    left: 35%; */
+    font-size: 3vw;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    padding: 7vh 0;
+    padding: 0.1px;
+   
+}
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    margin-left: 28vw;
+}
+#page3 h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-family: "silk serif";
+    left: -8%;
+    /* top: %; */
+}
+#page3 .underline{
+    margin-left: 28vw;
+    margin-bottom: 23vh;
+   
+}
+#image-div-container{
+    /* background-color: red; */
+    padding: 1vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+}
+#image-div{
+    height: 38vw;
+    width: 32vw;
+    /* background-color: blue;  */
+    position: relative;
+    flex-shrink: 0;
+    margin-left: 0.99vw;
+
+}
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#image-div:nth-child(1){
+height: 30vw;
+width: 22vw;
+}
+#image-div:last-child{
+    height: 33vw;
+    width: 22vw;
+    margin-top: 3vw;
+    
+}
+#image-div:nth-last-child(2){
+    margin-top: 15vh;
+    margin-right: 5vw;
+}
+
+.page3-circle1{
+    height: 23vw;
+    width: 23vw;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+    margin-left: 13vw;
+}
+.page3-circle1 svg{
+    height: 31%;
+
+}
+.page3-circle2{
+    height: 23vw;
+    width: 23vw;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 40vh;
+    margin-left: 13vw; */
+}
+.page3-circle2 svg{
+    height: 31%;
+    rotate: -45deg;
+
+}
+.circle-in{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0;
+}
+.circle-in p{
+    font-size: 0.95vw;
+    color: black;
+    width: 60%;
+    scale: 0;
+    font-weight: 500;
+    transition: all ease 0.7s;
+    transition-delay: 0.3;
+}
+.page3-circle1:hover .circle-in{
+    scale: 1;
+}
+.page3-circle1:hover p{
+    scale: 1;
+}
+.page3-circle2:hover .circle-in{
+    scale: 1;
+}
+.page3-circle2:hover p{
+    scale: 1;
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    padding: 5vh;
+}
+#page4content{
+    width: 72vw;
+    margin-left: 28%;
+    position: relative;
+}
+#page4content h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+#page4content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-family: "silk serif";
+    left: -8%;
+    /* top: %; */
+}
+
+#page4content .line{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin: 3.5vw 0;
+    
+}
+#page4content>p{
+    font-size: 2vw;
+    width: 45%;
+    margin-bottom: 4.9vw;
+}
+#image{
+    height:83vh;
+    width: 55vw;
+    margin-left: 28%;
+    /* background-color: red; */
+    display: flex;
+    /* gap: 2vw; */
+    
+}
+#image img{
+   height: 100%;
+   width: 70%;
+   object-fit: cover;
+}
+#image p{
+    margin-left: 1.5vw;
+    width:20vw  ;
+    font-size: 1vw;
+
+}
+#page4_blue{
+    background-color: #3F7DF4;
+    width: 37vw;
+    padding: 1.5vw 1vw;
+    position: relative;
+    /* right: 11%; */
+    margin-top: -32vh;
+    margin-left: 50vw;
+}
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.7vw;
+    margin-bottom: 2vw; 
+    border-bottom: 1.4px solid white;
+
+    
+}
+.content p{
+    padding: 1vw;
+    width: 50%;
+    font-size: 0.99vw;
+}
+.content h4{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+.line1{
+    height: 0.3px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20vh;
+    margin-left: 20vw;
+    
+}
+
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    padding: 5vw 0;
+}
+.elem{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: rebeccapurple; */
+    white-space: nowrap;
+    
+    
+}
+.elem h1{
+    font-size: 6.2vw;
+   -webkit-text-stroke: 1px #fff;
+   color: transparent;
+   font-weight: 400;
+   display: inline-block;
+   margin: 10px;
+   animation-name: mover;
+   animation-timing-function: linear;
+   animation-duration: 11s;
+   animation-iteration-count: infinite;
+   margin-bottom: 1vw;
+}
+@keyframes mover {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 14px));
+    }
+    
+}
+.elem2{
+    white-space: nowrap;
+}
+.elem2 h1{
+    font-size: 7.2vw;
+   -webkit-text-stroke: 1px #fff;
+   color: transparent;
+   font-weight: 400;
+   display: inline-block;
+   margin: 10px;
+   margin-bottom: 1vw;
+   animation-name: mover;
+   animation-duration: 11s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: reverse;
+   
+}
+.elem span{
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
+}
+.elem2 span{
+    font-style: italic;
+    font-family: "silk serif";
+    color: transparent;
+}
+
+
+#footer{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    padding-left: 28vw;
+}
+#footer h1{
+    font-size: 8vw;
+    /* width: 60vw; */
+    /* background-color: aqua; */
+    text-transform: uppercase;
+}
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-family: "silk serif";
+    left: 22%;
+
+}
+.underline{
+    height: 0.2vw;
+    width: 100%;
+    background-color: #fff;
+    margin: 2vw 0;
+}
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 4vw; */
+}
+.box {
+    width: 25%;
+}
+#footer-div h6{
+    font-size: 1vw;
+    margin-bottom: 1.5vw;
+}
+#footer-div h5{
+    font-size: 1.8vw;
+    font-weight: 400;
+    margin: 0.2vh 0;
+     
+}
+/* #footer>h5{
+    font-weight: 600;
+    font-size: 1.3vw;
+} */
+._canvas_container {
+    z-index: 999999 !important;
+    pointer-events: none;
+}
